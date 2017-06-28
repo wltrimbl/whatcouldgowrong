@@ -1,4 +1,4 @@
-#High Throughput sequencing.  What could go wrong?
+# High Throughput sequencing.  What could go wrong?
 Will Trimble, Argonne National Laboratory
 ***
 ## Illumina flowcell videos
