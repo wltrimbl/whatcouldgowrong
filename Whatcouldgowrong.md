@@ -1,8 +1,7 @@
-
 #High Throughput sequencing.  What could go wrong?
 Will Trimble, Argonne National Laboratory
-
-##Illumina flowcell videos
+***
+## Illumina flowcell videos
 I made a tool [thumbnailpolish](https://github.com/wltrimbl/thumbnailpolish)  
 to visualize what the Illumina machines are doing.
 
@@ -17,7 +16,7 @@ to visualize what the Illumina machines are doing.
 These sequencing machines produce FASTQ files.  
 
 
-#The nucleotide profiles
+## The nucleotide profiles
 
 These are (stacked line) plots of the nucleotide content as a funciton of position in the
 read for datasets that we had the privilege to process at MG-RAST.
@@ -74,18 +73,18 @@ This unfortunate dataset was 9 Gbases of adapters.  I jokingly call this
 run could not be used for science and had to be re-done.
 ![all adapters](images/job35122-profile-alladapters.svg)
 
-#Sequencing trainwrecks
+## Sequencing trainwrecks
 At the Argonne sequencing core, we have seen lots of bad data, both that we've generated
 ourself and that other people generated and asked us to bless or condemn.
 
-#The UC shotgun story
+## The UC shotgun story
  (Too little complexity)
 Several shotgun samples in a project with a few dozen samples had low complexities --
 a few kilobases would explain 70-90% of gigabases of dataset.  These ended up
 being seemingly random microbial (and human) genes that amplified really well,
 and thus ate up all the sequencing data.
 
-#The UC RNAseq story
+## The UC RNAseq story
 (Too little complexity)
 Microbial RNA-seq expression experiment produced a handful of samples with very low complexity, 
 4.5 kbases explained almost all of each datasets.  Investigation turned up E. coli SSU + 
@@ -94,11 +93,11 @@ Best explanation:  a small-subunit subtraction affinity column (used to reduce t
 fraction in RNAseq dataset) performed the wrong operation--it added artificial SSU DNA instead 
 of subtracting it.
 
-#The creative RNAseq story
+## The creative RNAseq story
 One RNA-seq run a colleage asked us to look at had far, far more complexity than expected, billions of distinct kmers for a
 < 10Mbase genome.   I call this the RNA polymerase that took a creative writing class.
 
-#The diatom story
+## The diatom story
 (About the right amount of complexity)
 Once upon a time, when the Miseq was young, we had a single-celled eukaryote to sequence.  The instrument
 purred along just fine, produced the nominal amount of healthy-looking data, but the customer said the 
@@ -113,7 +112,7 @@ there were only 100k different starting points in the genome.
 PCR had exhausted the sample, and every template was present an average of 50 times in the output.
 So this run procued really only 100k * 500bp = 50Mbases = 1x coverage, despite looking normal.
 
-#The barcode confusion story
+## The barcode confusion story
 We were sequencing a dozen or so genomes for a corporate client.  A few of the genomes showed signs 
 of 3-15x contamination with *something*, and this contamination was ruining the microbial assemblies.
 We found that the contaminants were in fact from other genomes being sequenced on the same lane.
