@@ -41,6 +41,7 @@ according to position.  Some people might call this "conservation"
 
 This dataset has a preponderance of positions that are split close to 50:50 between 
 two bases.  This is a 454 run with mixed reads, forward and reverse from the primer.
+
 .. image:: images/mgm4751523.3-profile-fwdandback.png
 
 This is a 454 dataset with unanimous consensus for the first 10 bp.  Exceedingly 
